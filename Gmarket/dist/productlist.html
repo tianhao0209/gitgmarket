@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>productlist</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/listwrap.css">
+    <script src="js/require.js" async="true" defer="defer" data-main="js/main1">
+	</script>
+</head>
+<script>
+    // 商品导航
+    // $(function () {
+	// 		//通过ajax下载数据
+	// 		$.ajax({
+	// 			url:"list-area.json",
+	// 			success: function (result) {
+	// 				console.log(result[0]);
+	// 				// var commodity = result.SuperDealList ;
+	// 				// console.log(commodity)
+	// 				//JQ创建节点，html部分如何写，这里也如何写
+	// 				for (var i = 0; i < result.length; i++) {
+	// 					//JQ创建节点的函数，返回值就是这个节点
+	// 					var node = $(`<li> 
+    //         <a href="">${result[i].TEXT}<span class="icon weekly"></span></a>  
+    //     </li>`)
+	// 					node.appendTo($(".list-area-ul"));
+	// 				}
+	// 			},
+	// 			error: function (msg) {
+	// 				console.log(msg);
+	// 			}
+	// 		})
+    //     })
+    //     // 商品
+        // $(function () {
+		// 	//通过ajax下载数据
+		// 	$.ajax({
+		// 		url: "superdeal.json",
+		// 		success: function (result) {
+		// 			console.log(result);
+		// 			// var commodity = result.SuperDealList ;
+		// 			// console.log(commodity)
+		// 			//JQ创建节点，html部分如何写，这里也如何写
+		// 			for (var i = 0; i < result.length; i++) {
+		// 				//JQ创建节点的函数，返回值就是这个节点
+		// 				var node = $(`<li>
+        //     <a href="http://localhost/%E5%81%87%E6%9C%9F%E9%A1%B9%E7%9B%AE/Gmarket/productlist.html?id=${result[i].GoodsCode}" target='_blank'>
+        //         <img src="${result[i].GoodsImgUrl}" alt="" class="thumb"> 
+        //         <span class="title">${result[i].GoodsName}</span>
+        //     </a>
+        //     <span class="price">
+        //                 <em class="sale"><strong>50</strong>%<span class="icon">OFF</span></em>
+        //                 <del>￦</del>
+        //             <strong>￦<span>20,000</span></strong>product list
+        //             <span id="currency_0" class="currency"><span>￥</span><strong>121.02</strong></span>
+        //     </span>
+        // </li>`)
+		// 				node.appendTo($(".item-c-ul"));
+		// 			}
+		// 		},
+		// 		error: function (msg) {
+		// 			console.log(msg);
+		// 		}
+		// 	})
+		// })
+</script>
+<body>
+    <div class="nav-header">
+        <div class="nav-header-c">
+            <ul class=" language clr">
+                <li class="language-item fl "><a href=#>汉语</a></li>
+                <li class="language-item fl "><a href=#>英语</a></li>
+                <li class="language-item fl "><a href=#>韩国语</a></li>
+                <span class="login fl"><a href="#">您好！登录</a>或<a href="#">加入我们</a></span>
+                <li class="area fr"><a href="#">￥CNY</a></li>
+                <li class="language-item1 fr ">基本配送国家或地区<a href=#>South Korea</a><span></span></li>
+                <li class="language-item1 fr "><a href=#>我的购物信息</a></li>
+                <li class="language-item1 fr "><a href=#>在线咨询</a></li>
+                <li class="language-item1 fr "><a href=#>关注商品</a></li>
+                <li class="language-item1 fr "><a href=#>购物车</a></li>
+                <li class="language-item1 fr "><a href=#>帮助</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo搜索 -->
+    <div class="logo">
+        <div class="logo-c">
+            <h1><img src="./../Gmarket/images/logo_03.jpg" alt=""></h1>
+            <div id="search">
+                <form id="HeaderSearchForm" name="HeaderSearchForm">
+                    <input type="text" placeholder="" class="search-area">
+                    <button class="search-btn"><span></span></button>
+                </form>
+                <div id="recommend_keyword_list" class="recommend">
+                    <ul>
+                        <li><a href="http://glrpp.gmarket.co.kr/2046?charset=zhCN"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">SOHO WEEK</a></li>
+                        <li><a href="http://global.gmarket.co.kr/item?goodscode=1807231220"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">伊蒂之屋</a></li>
+                        <li><a href="http://gsearch.gmarket.co.kr/Listview/Search?keyword=BTS&amp;GdlcCd=100000028&amp;type=IMG&amp;pagesize=60&amp;ordertype=NEW&amp;IsOversea=True&amp;IsDeliveryFee=&amp;IsGmarketBest=False&amp;IsGmileage=False&amp;IsDiscount=False&amp;IsGstamp=False&amp;IsBookCash=False&amp;DelFee=&amp;page=1&amp;IsFeature=&amp;IsGlobalSearch=undefined"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">BTS</a></li>
+                        <li><a href="http://glistings.gmarket.co.kr/Listview/List?keyword=&amp;GdlcCd=100000035&amp;GdmcCd=200000594&amp;type=IMG&amp;pagesize=60&amp;ordertype=&amp;IsOversea=True&amp;IsDeliveryFee=&amp;IsGmarketBest=False&amp;IsGmileage=False&amp;IsDiscount=False&amp;IsGstamp=False&amp;IsBookCash=False&amp;DelFee=&amp;page=1&amp;IsFeature=&amp;IsGlobalSearch=undefined"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">儿童内衣</a></li>
+                        <li><a href="http://glrpp.gmarket.co.kr/2024?charset=zhCN"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">KF94 口罩</a></li>
+                        <li><a href="http://global.gmarket.co.kr/item?goodsCode=1898711191"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">Neoflam FIKA</a></li>
+                        <li><a href="http://gpromotion.gmarket.co.kr/Plan/PlanView?sid=149607"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">配送通知</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1><img src="./../Gmarket/images/logo_05.jpg" alt=""></h1>
+        </div>
+    </div>
+</body>
+<!-- 蓝色导航栏 -->
+<div class="category">
+    <div class="category-c">
+
+        <div id="all_category">
+            <a href="#category" class="all" onclick="GlobalHeaderTop.CategoryOpen()">
+                全部商品类目<span class="arrow"></span></a>
+            <!-- <div>全部商品的下拉</div> -->
+        </div>
+        <ul class="recommend1">
+            <li><a href="http://gcorner.gmarket.co.kr/Bestsellers"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">热销商品</a></li>
+            <li><a href="http://gcorner.gmarket.co.kr/Superdeals"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">超级特价</a></li>
+            <li><a href="http://gevent.gmarket.co.kr/china/promotion/CouponZone.asp"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">会员优惠券专区</a></li>
+            <li><a href="http://gpromotion.gmarket.co.kr/Plan/PlanView?sid=149356"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">活动优惠券专区</a></li>
+        </ul>
+    </div>
+</div>
+<div class="banner">
+    <div class="banner-c">
+    </div>
+    
+</div>
+<div class="list-area">
+    <ul class="list-area-ul">
+        <!-- <li> 
+            <a href="">本周特价<span class="icon weekly"></span></a>  
+        </li> -->
+    </ul>
+</div>
+<div class="item">
+    <div class="item-c clr">
+       <ul class="item-c-ul">
+        <li>
+            <a href="http://global.gmarket.co.kr/item?goodsCode=1853948947" data-gg-tracking-installed="[200002577,link,click] Superdeal_아이템" data-montelena-acode="200002577">
+                <img src="http://image.gmarket.co.kr/service_image/2020/10/08/20201008173313373080_0_0.jpg" alt="" class="thumb"> 
+                <span class="title">[悦诗风吟] 秋季保湿单品 7折+独家赠送礼盒</span>
+            </a>
+            <span class="price">
+                        <em class="sale"><strong>50</strong>%<span class="icon">OFF</span></em>
+                        <del>￦40,000</del>
+                    <strong>￦<span>20,000</span></strong>
+                    <span id="currency_0" class="currency"><span>￥</span><strong>121.02</strong></span>
+                    <script type="text/javascript">setCurrency('0','20000','main');</script>
+            </span>
+        </li>
+    </ul> 
+    </div>
+    
+</div>
+<div class="footer">
+    <ul class="footer-top clr">
+        <li><a href="#">关于Gmarket</a></li>
+        <li><a href="#">用户协议</a></li>
+        <li><a href="#">隐私政策</a></li>
+        <li><a href="#">网站地图</a></li>
+        <li><a href="#">客服中心</a></li>
+        <li><a href="#"><img src="" alt="">微博</a></li>
+    </ul>
+    <div class="footer-c clr">
+        <div class="footer-img">
+            <img src="./../Gmarket/images/footer-botton.jpg" alt="" style="width: 1200px;">
+        </div>
+    </div>
+</div>
+</body>
+</html>

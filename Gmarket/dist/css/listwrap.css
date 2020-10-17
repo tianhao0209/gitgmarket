@@ -1,0 +1,59 @@
+.banner {
+  height: 230px;
+  background: url(../images/superdeal_bg.png) no-repeat 50% 0; }
+
+.banner-c {
+  height: 230px;
+  width: 1200px;
+  margin: auto;
+  background: url(../images/banner.png) no-repeat 50% -230px; }
+
+.list-area {
+  margin: 0 auto 5px;
+  background-color: #EBEBEB; }
+
+.list-area-ul {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-right: 85px;
+  width: 1190px; }
+
+.list-area-ul > li {
+  float: left;
+  padding: 13px 0;
+  height: 40px;
+  border: 1px solid red; }
+
+.list-area-ul a {
+  display: block;
+  margin: 0 17px 0 0;
+  padding-left: 17px;
+  height: 40px;
+  color: #1f1f1f;
+  font-family: Tahoma;
+  font-size: 13px;
+  font-weight: bold; }
+
+.list-area-ul span.icon {
+  display: inline-block;
+  margin-right: 10px;
+  width: 40px;
+  border: 1px solid black;
+  height: 40px;
+  vertical-align: middle; }
+
+.item-c {
+  width: 1200px;
+  margin: auto;
+  border: 1px solid red; }
+
+.item-c li {
+  float: left;
+  margin: 0 0 10px 10px;
+  width: 388px;
+  height: 395px;
+  border: 1px solid #E1E1E1; }
+
+.item-c img {
+  width: 388px;
+  height: 274px; }

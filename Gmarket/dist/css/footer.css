@@ -1,0 +1,16 @@
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  border-top: 4px solid #1179ea;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0; }
+
+.footer-top li {
+  width: 150px; }
+
+.footer-c {
+  width: 1200px;
+  margin: auto; }
+
+.footer {
+  margin-top: 20px; }

@@ -1,0 +1,179 @@
+.cart_header {
+    padding: 18px 0 20px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.inner_cont {
+    width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    font-size: 38px;
+    line-height: 56px;
+    color: #363636;
+    font-weight: normal;
+    letter-spacing: -1px;
+    padding-left: 14px;
+}
+.cart_option {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background: #f3f3f3;
+}
+.inner_cont {
+    width: 1200px;
+    margin: 0 auto;
+}
+.cart_option_area {
+    display: block;
+    width: 824px;
+    height: 60px;
+}
+.cart_option_area .cart_option_box {
+    width: auto;
+    overflow: auto;
+    height: auto;
+    padding: 20px 0 20px 8px;
+}
+.cart_option_area .cart_option_box .select_all {
+    height: 20px;
+    line-height: 20px;
+    margin-top: -1px;
+}
+.input_custom {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    *width: 20px;
+    *overflow: visible;
+}
+.cart_option_box span {
+    display: inline-block;
+    color: #7F8590;
+    // *display: inline;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    font-weight: normal;
+    line-height: 20px;
+    height: 20px;
+}
+.input_custom input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    margin-top: 0 !important;
+}
+.input_custom label {
+    white-space: nowrap;
+    overflow: visible;
+    padding-left: 25px;
+    background-color: #f3f3f3;
+    width: auto;
+    vertical-align: top;
+}
+.cart_option_box li {
+    float: left;
+    line-height: 20px;
+    margin-right: 14px;
+    position: relative;
+    margin-left: 14px;
+    vertical-align: top;
+    // *background: url(//pics.gmarket.co.kr/pc/single/cn/cart/bg_item_option_addbuy_contour.png) right center no-repeat;
+    // *padding-right: 14px;
+    // *margin-right: 0;
+}
+.cart_option_area .cart_option_box button {
+    vertical-align: top;
+    margin-top: 1px;
+    display: inline-block;
+    line-height: 20px;
+    height: 20px;
+}
+.service__cart button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
+.cart_option_box span {
+    display: inline-block;
+    color: #7F8590;
+    *display: inline;
+    font-size: 14px;
+    letter-spacing: -0.5px;
+    font-weight: normal;
+    line-height: 20px;
+    height: 20px;
+}
+.cart_option_area .cart_option_box button span {
+    position: relative;
+    top: -1px;
+    left: -1px;
+}
+.cart_list-l{
+    width: 800px;
+    padding: 0 10px;
+    border: 1px solid red;
+    margin-left: 200px;
+    background-color: #fff;
+    position: relative;
+   
+}
+.title{
+    padding-left: 20px;
+    font-size:20px;
+    border-bottom: 1px solid black;
+}
+.pic{
+    width: 100px;
+    height: 100px;
+    margin-top:20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border: 1px solid red;
+    display: inline-block;
+}
+#duihao{
+    position: absolute;
+    top: 70px;
+    left: 15px;
+}
+.item-name{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.jian,.jia,.number{
+    margin-top: 20px;
+    margin-left: 20px;  
+
+}
+.number{
+    width: 30px;
+    height: 20px;
+    border: 1px solid gray;
+}
+.youhui{
+    margin-top: 20px;
+    margin-left:20px;
+    border :1px solid black;
+}
+.money{
+    margin-top: 20px;
+    margin-left:20px;
+}
+.delete{
+    margin-top: 30px;
+    margin-left: 10px;
+
+}
+.allprice{
+    width: 800px;
+    padding: 0 10px;
+    border: 1px solid red;
+    margin-left: 200px;
+    background-color: #fff;
+}

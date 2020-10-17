@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-details</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/logo.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/list-item.css">
+    <script src="js/require.js" async="true" defer="defer" data-main="js/main2">
+	</script>
+
+</head>
+<!-- <script>
+    $(function(){
+        function valueByName(search, name){
+        var start = search.indexOf(name + "=")
+        if(start==-1){
+            return null
+        }else{
+            var end = search.indexOf("&",start)
+            if(end==-1){
+                end=search.length;
+            }
+            var str = search.substring(start,end)
+            var arr =str.split("=");
+            return arr[1]
+        }
+    }
+        function download(){
+            $.ajax({
+                url:"superdeal.json",
+                success:function(result){
+                    var product_id=valueByName(location.search,"id");
+                    // var sidelist=result
+                    // console.log(result)
+                    for(var i=0; i<result.length;i++){
+                        // console.log('1')
+                        if(result[i].GoodsCode == product_id){
+                            var node=$(`<img src="${result[i].GoodsImgUrl}" alt="">
+        <div class="samll" style="width: 100px; height: 100px; border:solid;">
+            <img src="${result[i].GoodsImgUrl}" alt="">
+        </div>`)
+        node.appendTo($(".product-details"));
+                        }
+                    }
+                },
+                error: function (msg) {
+					console.log(msg);
+                }
+            })
+        }
+    
+    download()
+})
+</script> -->
+<body>
+    <div class="nav-header">
+        <div class="nav-header-c">
+            <ul class=" language clr">
+                <li class="language-item fl "><a href=#>汉语</a></li>
+                <li class="language-item fl "><a href=#>英语</a></li>
+                <li class="language-item fl "><a href=#>韩国语</a></li>
+                <span class="login fl"><a href="#">您好！登录</a>或<a href="#">加入我们</a></span>
+                <li class="area fr"><a href="#">￥CNY</a></li>
+                <li class="language-item1 fr ">基本配送国家或地区<a href=#>South Korea</a><span></span></li>
+                <li class="language-item1 fr "><a href=#>我的购物信息</a></li>
+                <li class="language-item1 fr "><a href=#>在线咨询</a></li>
+                <li class="language-item1 fr "><a href=#>关注商品</a></li>
+                <li class="language-item1 fr "><a href=#>购物车</a></li>
+                <li class="language-item1 fr "><a href=#>帮助</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- logo搜索 -->
+    <div class="logo">
+        <div class="logo-c">
+            <h1><img src="./images/logo_03.jpg" alt=""></h1>
+            <div id="search">
+                <form id="HeaderSearchForm" name="HeaderSearchForm">
+                    <input type="text" placeholder="" class="search-area">
+                    <button class="search-btn"><span></span></button>
+                </form>
+                <div id="recommend_keyword_list" class="recommend">
+                    <ul>
+                        <li><a href="http://glrpp.gmarket.co.kr/2046?charset=zhCN"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">SOHO WEEK</a></li>
+                        <li><a href="http://global.gmarket.co.kr/item?goodscode=1807231220"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">伊蒂之屋</a></li>
+                        <li><a href="http://gsearch.gmarket.co.kr/Listview/Search?keyword=BTS&amp;GdlcCd=100000028&amp;type=IMG&amp;pagesize=60&amp;ordertype=NEW&amp;IsOversea=True&amp;IsDeliveryFee=&amp;IsGmarketBest=False&amp;IsGmileage=False&amp;IsDiscount=False&amp;IsGstamp=False&amp;IsBookCash=False&amp;DelFee=&amp;page=1&amp;IsFeature=&amp;IsGlobalSearch=undefined"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">BTS</a></li>
+                        <li><a href="http://glistings.gmarket.co.kr/Listview/List?keyword=&amp;GdlcCd=100000035&amp;GdmcCd=200000594&amp;type=IMG&amp;pagesize=60&amp;ordertype=&amp;IsOversea=True&amp;IsDeliveryFee=&amp;IsGmarketBest=False&amp;IsGmileage=False&amp;IsDiscount=False&amp;IsGstamp=False&amp;IsBookCash=False&amp;DelFee=&amp;page=1&amp;IsFeature=&amp;IsGlobalSearch=undefined"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">儿童内衣</a></li>
+                        <li><a href="http://glrpp.gmarket.co.kr/2024?charset=zhCN"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">KF94 口罩</a></li>
+                        <li><a href="http://global.gmarket.co.kr/item?goodsCode=1898711191"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">Neoflam FIKA</a></li>
+                        <li><a href="http://gpromotion.gmarket.co.kr/Plan/PlanView?sid=149607"
+                                data-gg-tracking-installed="[200002482,link,click] Common_헤더_추천검색어"
+                                data-montelena-acode="200002482">配送通知</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h1><img src="./images/logo_05.jpg" alt=""></h1>
+        </div>
+    </div>
+
+<!-- 蓝色导航栏 -->
+<div class="category">
+    <div class="category-c">
+
+        <div id="all_category">
+            <a href="#category" class="all" onclick="GlobalHeaderTop.CategoryOpen()">
+                全部商品类目<span class="arrow"></span></a>
+            <!-- <div>全部商品的下拉</div> -->
+        </div>
+        <ul class="recommend1">
+            <li><a href="http://gcorner.gmarket.co.kr/Bestsellers"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">热销商品</a></li>
+            <li><a href="http://gcorner.gmarket.co.kr/Superdeals"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">超级特价</a></li>
+            <li><a href="http://gevent.gmarket.co.kr/china/promotion/CouponZone.asp"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">会员优惠券专区</a></li>
+            <li><a href="http://gpromotion.gmarket.co.kr/Plan/PlanView?sid=149356"
+                    data-gg-tracking-installed="[200002487,link,click] Common_헤더_메인메뉴"
+                    data-montelena-acode="200002487">活动优惠券专区</a></li>
+        </ul>
+    </div>
+</div>
+<div class="content clr">
+    <!-- 图片上的导航 -->
+    <div class="box__breadcrumb">
+        <ul class="list__breadcrumb clr">
+            <li class="list-item fl"><a href="https://global.gmarket.co.kr">Home</a> <span>></span></li>
+            <li class="list-item fl"><a class="link__breadcrumb"
+                    href="http://glistings.gmarket.co.kr/Listview/List?GdlcCd=100000005"
+                    rel="noopener noreferrer">化妆品/香水</a>
+                <div class="box__breadcrumb-depth"><button type="button" class="button__breadcrumb-open">열기</button>
+                    <!--  <div class="box__depth-item"><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdlcCd=100000005"
+                            rel="noopener noreferrer">化妆品/香水</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdlcCd=100000071"
+                            rel="noopener noreferrer">美体/护发</a></div>-->
+                </div>
+            </li>
+            <li class="list-item fl"><a class="link__breadcrumb"
+                    href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200000307"
+                    rel="noopener noreferrer">护肤</a>
+                <div class="box__breadcrumb-depth"><button type="button" class="button__breadcrumb-open">열기</button>
+                    <!--  <div class="box__depth-item"><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200000307"
+                            rel="noopener noreferrer">护肤</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200000308"
+                            rel="noopener noreferrer">基础彩妆</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200002353"
+                            rel="noopener noreferrer">彩妆</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200001544"
+                            rel="noopener noreferrer">防晒护理</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200000310"
+                            rel="noopener noreferrer">洗面奶/去角质霜</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200001785"
+                            rel="noopener noreferrer">面膜/贴</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200001706"
+                            rel="noopener noreferrer">指甲护理</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200000015"
+                            rel="noopener noreferrer">香水</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200001764"
+                            rel="noopener noreferrer">美容用品</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdmcCd=200000311"
+                            rel="noopener noreferrer">男士化妆品</a></div>
+                </div> -->
+            </li>
+            <li class="list-item fl"><a class="link__breadcrumb"
+                    href="http://glistings.gmarket.co.kr/Listview/List?GdscCd=300002653"
+                    rel="noopener noreferrer">爽肤水<span>></span></a>
+                <!-- <div class="box__breadcrumb-depth"><button type="button" class="button__breadcrumb-open">열기</button>
+                    <div class="box__depth-item"><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdscCd=300002653"
+                            rel="noopener noreferrer">爽肤水</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdscCd=300002654"
+                            rel="noopener noreferrer">乳液</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdscCd=300019834"
+                            rel="noopener noreferrer">喷雾</a><a class="link__breadcrumb-depth"
+                            href="http://glistings.gmarket.co.kr/Listview/List?GdscCd=300015853"
+                            rel="noopener noreferrer">护肤套装</a></div>
+                </div> -->
+            </li>
+        </ul>
+    </div>
+    <!-- 商品详情左-->
+    <div class="product-details fl">
+        <!-- <div class="small">
+            <img src="http://image.gmarket.co.kr/service_image/2020/09/29/20200929161837599387_0_0.jpg" alt="">
+            <div id="mark"></div>
+        </div>
+        
+        <div class="big">
+            <img src="http://image.gmarket.co.kr/service_image/2020/09/29/20200929161837599387_0_0.jpg" alt="">
+        </div>
+
+        <div class="small-bottom">
+            <img src="http://image.gmarket.co.kr/service_image/2020/09/29/20200929161837599387_0_0.jpg" alt="">
+        </div> -->
+    </div>
+    <!-- 商品详情右 -->
+    <div class="section__item--info  fr">
+        <div class="box__headline">
+            <div class="box__headline--col"><a
+                    href="http://gshop.gmarket.co.kr/Minishop/GlobalMinishop?CustNo=TE3OR38TMDcxOcwyMzQ4MTgwMDJ/Rw=="
+                    target="_blank" class="link__headline--brand" rel="noopener noreferrer">悦诗风吟官方旗舰店<i
+                        class="sprite__img-go">go</i></a></div>
+            <div class="box__headline--col box__headline--col-nowrap"><span class="box__headline--item">商品编号
+                    <!-- --> :
+                    <!-- -->667938939</span><span class="box__headline--item"><button title="" type="button"
+                        class="button--copy-url">Copy URL<i class="sprite__img-copy">copy</i></button></span></div>
+        </div>
+        <div class="box__item-info">
+            <div class="box__item--col box__item-summary">
+                <p class="text__item-title">15-17悦诗风吟 10月 悦诗风吟折扣日 全场 5-8折</p>
+                <div class="box__price">
+                    <p class="text__price-percent"><span class="text__price-discount">5.0</span><span
+                            class="text__price-mark">折</span></p>
+                    <p class="text__price-tag"><span class="text__price-selling">￥230.24</span><strong
+                            class="text__price-decide"><span class="text__price-foreign">￥115.12</span><span
+                                class="text__price-won">(
+                                <!-- -->￦19,000
+                                <!-- -->)</span></strong></p>
+                </div>
+            </div>
+            <div class="box__item--col box__item-button">
+                <div class="box__item-buttons"><button class="button__item-interest " type="button"><i
+                            class="sprite__img-interes">add/remove on wish list</i></button>
+                    <div class="box__toast-wish box__wish-adden"><i class="sprite__img-added"></i>
+                        <p class="text__toast">Added on your<br>Wish List</p>
+                    </div>
+                </div>
+                <div class="box__item-buttons"><button class="button__item-share " type="button"><i
+                            class="sprite__img-share">SNS 공유</i></button>
+                    <div class="box__layer-tooltip">
+                        <div class="box__tooltip-contents">
+                            <div class="button__list"><button type="button" class="button__sns" value="WEIBO">
+                                    <i class="sprite__img-cn1"></i><span class="text__sns">微博</span></button><button
+                                    type="button" class="button__sns" value="QZONE"><i class="sprite__img-cn3"></i><span
+                                        class="text__sns">QQ空间</span></button></div><button type="button"
+                                class="button__layer--closed"><i class="sprite__img-closed-10">close</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="box__others-info">
+            <div class="box__others-item">
+                <div class="box__others-title">最多购买数量
+                    <!-- -->
+                </div>
+                <div class="box__others-content">5日限购 1个 (可购买数量:5个)</div>
+            </div>
+            <div class="box__others-item">
+                <div class="box__others-title">配送至<button type="button" class="button__small sprite_after-arrow"><i
+                            class="flag kr">national flag</i><span class="button__name">South Korea</span></button>
+                </div>
+                <div class="box__others-content"><span class="text__color-blue">可配送</span></div>
+            </div>
+            <div class="box__others-item box__others-item--full ">
+                <div class="box__others-title">配送费</div>
+                <div class="box__others-content">
+                    <p class="text__others">韩国国内配送
+                        <!-- --> <span class="text__others--point">免邮</span><span
+                            class="text__others--point text__letter-s">￥15.07
+                            <!-- --> (
+                            <!-- -->￦2,500
+                            <!-- -->)</span> <span class="text__sub-info">购满￦30,000以上时免邮</span></p>
+                </div>
+            </div>
+            <div class="box__others-item">
+                <div class="box__others-title">商品预计重量</div>
+                <div class="box__others-content"><span class="text__letter-s">0.8
+                        <!-- -->kg</span></div>
+            </div>
+            <div class="box__others-item js-accordion-item">
+                <div class="box__others-title"><i class="sprite__img-air">aviation</i>预计配送开始</div>
+                <div class="box__others-content">
+                    <span class="text__others--point text__letter-s">Oct. 23rd
+                        (Fri)</span>
+                </div>
+            </div>
+            <p class="text__title-depth--m">选项选择</p>
+            <div class="attribute">
+                <div class="attribute-itme">
+                    <select name="" id="" class="attribute-item1">
+                        <option value="">Konny 抱婴带 经典款(11色)</option>
+                        <option value="">Konny 抱婴带 经典款(11色)</option>
+                        <option value="">Konny 抱婴带 经典款(11色)</option>
+                        <option value="">Konny 抱婴带 经典款(11色)</option>
+                        <option value="">Konny 抱婴带 经典款(11色)</option>
+                        <option value="">Konny 抱婴带 经典款(11色)</option>
+                    </select>
+                </div>
+                <div class="PName">
+                    <select name="" id="" class="PName-select">
+                        <option value="">尺寸1</option>
+                        <option value="">尺寸2</option>
+                        <option value="">尺寸3</option>
+                        <option value="">尺寸4</option>
+                        <option value="">尺寸5</option>
+                        <option value="">尺寸6</option>
+                        <option value="">尺寸7</option>
+                    </select>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="box__button-buy">
+            <div class="box__button--col"><button type="button" class="button__basic-default"
+                    id="_cartAction">购物车</button></div>
+            <div class="box__button--col"><button type="button" class="button__basic-primary"
+                    id="_buyAction">立即购买</button></div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <ul class="footer-top clr">
+        <li><a href="#">关于Gmarket</a></li>
+        <li><a href="#">用户协议</a></li>
+        <li><a href="#">隐私政策</a></li>
+        <li><a href="#">网站地图</a></li>
+        <li><a href="#">客服中心</a></li>
+        <li><a href="#"><img src="" alt="">微博</a></li>
+    </ul>
+    <div class="footer-c clr">
+        <div class="footer-img">
+            <img src="./images/footer-botton.jpg" alt="" style="width: 1200px;">
+        </div>
+    </div>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,15 @@
+console.log('加载成功');
+require.config({
+    paths:{
+        'jquery':'jquery-1.10.1.min',
+        'jquery-cookie':'jquery.cookie',
+        'productlist':'productlist'
+    },
+    shim:{
+        'jquery-cookie':['jquery']
+    }
+})
+require(['productlist'],function(productlist){
+    productlist.topNav();
+    productlist.product();
+})

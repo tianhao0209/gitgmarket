@@ -1,0 +1,456 @@
+.wrap{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    // margin-bottom: -5px;
+    background: url(../images/common.png) repeat 0 -398px;
+}
+.wrap-c{
+    width: 1200px;
+    line-height: 40px;
+    margin: auto;
+    // border: 1px solid red;
+}
+.wrap-item{
+    margin-left:50px ;
+    position: relative;
+}
+.wrap-item a{
+color: #fff;
+}
+.category {
+    display: none;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+    // display: none;
+    width: 1188px !important;
+    height: 560px;
+    background: #fff;
+    border: 1px solid #1179ea;
+    border-top: 0 none;
+}
+.column {
+    float: left;
+    width: 182px !important;
+    border-left: 1px solid #eee;
+    background: #fff;
+    padding: 16px 27px 60px 27px;
+    min-height: 466px;
+}
+// .subnav1{
+//     width: 270px;
+//     height: 290px;
+//     border: 1px solid #ddd;
+// }
+// .fushi{
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+// }
+
+.main{
+    width: 100%;
+}
+.main-c{
+    width: 1200px;
+    // height: 490px;
+    position: relative;
+    margin: auto;
+    // border: 1px solid red;
+}
+.lunbo{
+    width:950px ;
+    margin-top: 10px;
+    height: 370px;
+    position: absolute;
+    left: 160px;
+    top: 0;
+    overflow: hidden;
+}
+.lunbo img{
+    position: absolute;
+    left:0;
+    top: 0;
+}
+.lunbo>ul{
+ position: absolute;
+    bottom:20px;
+    right: 400px;
+    z-index:100;
+}
+.lunbo li{
+    height:10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-block;
+    // float: left;
+}
+.prev{
+    position: absolute;
+    top: 160px;
+    left: 0;
+    width: 50px;
+    height: 56px;
+    z-index: 99;
+    background:url(../images/gc_main.png) no-repeat  -100px -9px;
+
+}
+.next{
+    position: absolute;
+    top: 160px;
+    right:0;
+    width: 50px;
+    height: 56px;
+    z-index: 99;
+    background:url(../images/gc_main.png) no-repeat  -150px -9px;
+
+}
+.list-one{
+    background-color: blanchedalmond;
+}
+.aside{
+    width: 1200px;
+    height:385px;
+}
+#gnb{
+    position: relative;
+}
+.m1{
+    width: 100px;
+    height: 28px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 13px;
+}
+.subnav{
+    position: absolute;
+    left:100px;
+    top: 0px;
+    z-index:500;
+    text-align: center;
+    width: 270px;
+    background-color: white;
+    height: 290px;
+    border: 1px solid #ddd;
+    display: none;
+}
+// .subnave{
+//     display: none;
+// }
+.subnav strong{
+        display: block;
+        margin-bottom: 5px;
+        color: #252525;
+        font-family: tahoma;
+        line-height: 24px;
+        text-indent: 2px;
+        border-bottom: 1px solid #C5C5C5;
+}
+.subnav ul li a {
+    display: block;
+    background: none;
+    color: #252525;
+    font-family: tahoma;
+    line-height: 22px;
+    text-indent: 2px;
+}
+.main2{
+    width: 100%;
+}
+.main2-c{
+    width: 1200px;
+    margin: auto;
+    // border: 1px solid red;
+}
+table{
+    width: 1200px;
+    height: 500px;
+    // border: solid;
+    margin: 10px 0 20px 0;
+}
+table td{
+    width: 230px;
+    height: 240px;
+}
+table img{
+    width: 230px;
+    height: 240px;
+}
+.big img{
+    width:100%;
+    height:480px;
+}
+// 今日特卖
+.superdeal {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.superdeal .title_lang>span{
+    display: inline-block;
+    width: 296px;
+    height: 102px;
+    background: url(../images/gc_main.png) no-repeat 0px -190px;
+}
+.superdeal .cate_link1 {
+    top: 50px;
+}
+.cate_link1 {
+    position: absolute;
+    right: 5px;
+    width: 75%;
+    padding: 10px 0 0;
+    border-top: 2px solid #000;
+    text-align: right;
+}
+.cate_link1 a{
+    margin-left: 50px;
+
+}
+.superdeal a.btn_all {
+    top: 20px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+h2+a.btn_all {
+    display: inline-block;
+    display: inline;
+    position: absolute;
+    top:20px;
+    right: 5px;
+    letter-spacing: 5px;
+}
+a:link, a:visited, a:active {
+    color: #444;
+    text-decoration: none;
+}
+.list{
+    height: 2063px;
+    padding-top: 10px;
+    overflow:hidden;
+}
+.commodity{
+    width: 380px;
+    height:520px;
+    float: left;
+    text-align: center;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    padding:0 5px;
+}
+.goodsimg{
+    height: 400px;
+    width:370px;
+    margin-top: 10px    ; 
+}
+.product-i{
+    margin-top: 20px;
+}
+.now-p{
+    font-weight: bold;
+    text-align: right;
+}
+.ago-p{
+    text-decoration: line-through;
+    color: #CCC;
+    margin-right: 10px;
+}
+.descentrate{
+    color:red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.price{
+    font-size: 20px;
+    font-weight: bold;
+}
+#button{
+    width: 556px;
+    height: 58px;
+    // border: 1px solid red;
+    margin: 50px auto 0;
+    background: url(../images/gc_main.png)no-repeat 0 -819px;
+}
+// 热销商品
+.Best-Sellers {
+    position: relative;
+    margin-top: 50px;
+}
+.title_lang1>span {
+    width: 194px;
+    height: 45px;
+    display: inline-block;
+    background: url(../images/gc_main.png) no-repeat 0px -430px;
+}
+.Best-Sellers .cate_link2 {
+    top: 30px;
+}
+.cate_link2 {
+    position: absolute;
+    right: 5px;
+    width: 82%;
+    padding: 10px 0 0;
+    border-top: 2px solid #000;
+    text-align: right;
+}
+.cate_link2 a{
+    margin-left: 50px;
+
+}
+.Best-Sellers a.btn_all1 {
+    top:0px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+h2+a.btn_all1 {
+    display: inline-block;
+    // display: inline;
+    position: absolute;
+    top:0px;
+    right: 5px;
+    letter-spacing: 3px;
+}
+.Best-Sellers-all{
+    height: 400px;
+    width: 100%;
+    border: solid;
+    margin:30px 0 0 0;
+    overflow: hidden;
+}
+// .ul{
+//     // display: flex;
+//     // justify-content: space-around;
+// }
+.li{
+  width:19%;
+  float: left;
+  height: 400px;
+  margin-left:5px;
+//   border: solid;
+//   display: inline-block;
+}
+.li>img{
+    width: 220px;
+    height: 300px;
+}
+//热销品牌
+.hot_brands{
+    position: relative;
+    margin: 35px 0 30px;
+}
+.hot_brands .title_lang2>span {
+    width: 196px;
+    height: 45px;
+    display: inline-block;
+    background: url(../images/gc_main.png) no-repeat -210px -430px;
+    position: relative;
+}
+.cate_link3{
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    width: 82%;
+    padding: 10px 0 0;
+    border-top: 2px solid #000;
+    text-align: right;
+}
+.cate_link3 a{
+    margin-left: 50px;
+
+}
+// .pinpai{
+//     border-collapse: collapse;
+// }
+.brand_box{
+    width: 1200px;
+    height: 851px;
+    margin-top:30px;
+    position: relative;
+    // float: left;
+    border: 1px solid red;
+}
+.top-left,.top-right{
+    position: absolute;
+    top: 0;
+    width: 339px;
+    height: 339px;
+}
+.bottom-left,.bottom-right{
+    position: absolute;
+    bottom: 0;
+    width: 339px;
+    height: 339px;
+}
+.top-left,.bottom-left{
+    left: 0;
+}
+.top-right,.bottom-right{
+    right: 0;
+}
+.bn_small-top,.bn_samll-bottom{
+    margin: 0 340px;
+    display: block; 
+    width: 511px;
+    height: 339px;
+    // border:solid red; 
+}
+.bn_samll-center{
+    display: block;
+    height:170px;
+    width: 1200px;
+    border: solid;
+    // margin: 340px 0;
+}
+.bn_small-top a {
+    float: left;
+    // border: solid;
+}
+.bn_small-center a {
+    float: left;
+    // border: solid;
+}
+//微信访问
+.bottom-banner img{
+    width: 380px;
+    height: 144px;  
+
+}
+.facebook,.instagram,.wechat{
+    width: 380px;
+    height: 144px;
+    margin-left: 10px;
+}
+// 创造记录
+.site_credibility{
+    margin: 20px 0;
+}
+.site_credibility li{
+    width: 286px;
+    height: 90px;
+    text-align: center;
+    line-height: 126px;
+    float: left;
+    color: #444;
+    border:1px solid #ddd;
+    margin-left: 10px;
+    padding: 25px 0;
+    font: 12px Tahoma, Arial, sans-serif;
+}
+.site_credibility img{
+    width: 92px;
+    height: 68px;
+    margin-left: 20px;
+    vertical-align: top;
+    display: inline-block;
+}
+.word{
+    display: inline-block;
+    width: 92px;
+    height: 68px;
+    text-align: left;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+// 底部
